@@ -2,6 +2,10 @@ function openMenu() {
     document.getElementById('menu').classList.toggle('menu-active')
 }
 
+function openSearch() {
+    document.getElementById('search').classList.toggle('search-active')
+}
+
 const slides = document.querySelectorAll('.hero .contents')
 const dots = document.querySelectorAll('.dots-container span')
 let currentIndex = 0
