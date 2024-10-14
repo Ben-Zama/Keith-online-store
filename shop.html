@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keith Online Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main">
+
+        <!-- Header section -->
+
+        <header>
+
+            <div class="top">
+                <div class="logo">
+                    <img src="assets/logo.png" alt="Keith Online Store Logo">
+                </div>
+                <div onclick="openMenu()" class="hamburger">
+                    <i class="bi bi-list"></i>
+                </div>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="#">Shop</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+                <div class="icons">
+                    <input type="search" placeholder="search..." id="searchbar">
+                    <i onclick="opensearchbar()" class="bi bi-search"></i>
+                    <i class="bi bi-cart3"></i>
+                </div>
+            </div>
+
+            <div id="menu" class="bottom">
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="#">Shop</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+                <div class="search">
+                    <input type="search" placeholder="Search for products...">
+                    <button>
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+            </div>
+
+        </header>
+
+        
+
+        <!-- Footer section -->
+
+        <footer>
+
+            <div class="top">
+                <div>
+                    <h3>Keith</h3>
+                    <hr>
+                    <div>
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <p>123 Consectetur at ligula 10660</p>
+                    </div>
+                    <div>
+                        <i class="bi bi-telephone-fill"></i>
+                        <p>010-020-0340</p>
+                    </div>
+                    <div>
+                        <i class="bi bi-envelope-fill"></i>
+                        <p> info@company.com</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Products</h3>
+                    <hr>
+                    <p>Luxury</p>
+                    <p>Sport wear</p>
+                    <p>Popular Dress</p>
+                    <p>Gym Accessories</p>
+                    <p>Sport Shoes</p>
+                </div>
+                
+                <div>
+                    <h3>Further Info</h3>
+                    <hr>
+                    <p>Home</p>
+                    <p>About us</p>
+                    <p>Shop Locations</p>
+                    <p>FAQs</p>
+                    <p>Contact</p>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="middle">
+                <div class="icons">
+                    <div>
+                        <i class="bi bi-facebook"></i>
+                    </div>
+                    <div>
+                        <i class="bi bi-instagram"></i>
+                    </div>
+                    <div>
+                        <i class="bi bi-twitter"></i>
+                    </div>
+                    <div>
+                        <i class="bi bi-linkedin"></i>
+                    </div>
+                </div>
+
+                <div class="search">
+                    <div>
+                        <input type="search" placeholder="Email address">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom">
+                <p>Copyright &copy; <span id="year"></span> Keith Online Shop</p>
+            </div>
+
+        </footer>
+
+    </div>
+
+    <script src="function.js"></script>
+    
+</body>
+</html>
