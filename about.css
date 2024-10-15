@@ -1,0 +1,119 @@
+/* About hero */
+
+.about-hero {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5% 0;
+}
+.about-hero .text {
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.about-hero .text h2 {
+    font-family: var(--header-font);
+}
+
+/* Services */
+
+.services {
+    margin-top: 50px;
+    padding: 0 5%;
+    text-align: center;
+}
+.services .text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.services .text h2 {
+    font-family: var(--header-font);
+}
+.services .container {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.services .container .box {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 4px 4px 16px rgb(156, 155, 155);
+}
+.services .container .box i {
+    color: var(--primary-color);
+    font-size: 50px;
+}
+.services .container .box p {
+    font-size: 20px;
+    font-weight: bold;
+}
+.services .container .box:hover {
+    background-color: var(--primary-color);
+}
+.services .container .box:hover i, .services .container .box:hover p {
+    color: white;
+}
+
+/* Brand */
+
+.brands {
+    margin-top: 50px;
+    padding: 0 5%;
+    text-align: center;
+    background-color: var(--secondary-color);
+}
+.brands .text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.brands .text h2 {
+    font-family: var(--header-font);
+}
+.brands .container {
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+.brands .container img {
+    height: 100%;
+    width: 25%;
+    object-fit: contain;
+    padding: 0 5%;
+    filter: grayscale();
+}
+.brands .container img:hover {
+    filter: none;
+}
+
+@media (min-width: 992px) {
+    .services .text p {
+        padding: 0;
+        padding: 0 30%;
+    }
+    .services .container {
+        flex-direction: row;
+    }
+
+    /* brands */
+
+    .brands .text p {
+        padding: 0 10%;
+    }
+    .brands {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5%;
+        gap: 25px;
+    }
+    .brands .container {
+        width: 50%;
+    }
+}
